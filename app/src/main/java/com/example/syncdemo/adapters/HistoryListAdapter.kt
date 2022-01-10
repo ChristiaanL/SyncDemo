@@ -18,7 +18,6 @@ class HistoryListAdapter(val historyViewModel: HistoryViewModel):RecyclerView.Ad
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        Log.i("onBindViewHolder", "Value: ${historyViewModel.historyList[position].value}")
         holder.history_text.text = historyViewModel.historyList[position].value.toString()
         holder.history_time.text = historyViewModel.historyList[position].requestTime.toString()
     }

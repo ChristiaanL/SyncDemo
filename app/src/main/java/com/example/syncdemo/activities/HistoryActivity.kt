@@ -34,13 +34,8 @@ class HistoryActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        val loadHistoryButton: Button = findViewById(R.id.load_history_button)
-        loadHistoryButton.setOnClickListener {
-        }
-
         Thread(Runnable {
             viewModel.historyList = DBHelper().getAllFibRequests()
-            Log.i("History Loaded", "History List: ${viewModel.historyList}")
             this.adapter.notifyDataSetChanged()
         }).start()
 

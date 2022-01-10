@@ -20,7 +20,6 @@ class RequestListAdapter(val requestViewModel: RequestViewModel):RecyclerView.Ad
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.request_text.text = requestViewModel.fibDisplayedList[position].toString()
         holder.request_button.setOnClickListener {
-            Log.i("request_button", "Save was pressed!")
             holder.request_button.isClickable = false
             holder.request_button.text = "Saved"
             holder.request_button.setBackgroundColor(Color.RED)

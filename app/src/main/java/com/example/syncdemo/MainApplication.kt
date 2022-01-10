@@ -11,7 +11,6 @@ open class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance  = this
-        Log.i("MainApplication", "Inside Main Application")
     }
 
     companion object {
