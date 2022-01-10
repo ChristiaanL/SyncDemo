@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SyncDemo</string>
+    <string name="start_text">Get Strated?</string>
+    <string name="request_text">Send Request</string>
+    <string name="history_activity_button_text">Checkout History</string>
+    <string name="request_activity_button_text">Checkout Requests</string>
+    <string-array name="sequence_length_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>
